@@ -17,7 +17,7 @@ A new "webhook" instance
 **USAGE**
 ```lua
 local webhooker = require(path.to.webhooker)
-local myWebhooker = webhooker.new("https://example.com/webhook")
+local webhook = webhooker.new("https://discord.com/api/webhooks/[CHANNEL_ID]/[WEBHOOK_TOKEN]")
 ```
 
 ## Methods
