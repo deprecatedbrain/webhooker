@@ -1,5 +1,42 @@
 # Webhooker Documentation
-***TYPES***
+
+## Constructor
+
+`webhooker.new(webhook_url: string)`
+
+Creates a new instance of the webhooker with the specified webhook URL.
+
+**PARAMATERS**
+
+`webhook_url` (string): The URL to which the webhook messages will be sent.
+
+**RETURNS**
+
+A new "webhook" instance
+
+**USAGE**
+```lua
+local webhooker = require(path.to.webhooker)
+local myWebhooker = webhooker.new("https://example.com/webhook")
+```
+
+## Methods
+
+`webhooker:sendMessage(payload: webhook_payload)`
+
+Sends a message to the webhook URL with the specified payload.
+
+**PARAMATERS**
+
+`payload` (webhook_payload): The data to be sent to the webhook in JSON format.
+
+**RETURNS**
+
+`success` (boolean): true if the request was successful, false otherwise.
+
+`response` (any): The response from the request if successful, or the error message if the request failed.
+
+## Types
 
 All types are from Discord's API.
 
